@@ -1,9 +1,10 @@
-import Footer from "./components/Footer";
-
+import Footer from "./components/Footer/Footer";
+import Hero from "./components/Hero/Hero";
 
 const App = () => {
 	return (
 		<>
+			<Hero />
 			Features Pricing Resources Login Sign Up More than just shorter links Build your
 			brand’s recognition and get detailed insights on how your links are performing. Get
 			Started Shorten a link here... Shorten It! Advanced Statistics Track how your links

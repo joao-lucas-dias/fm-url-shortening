@@ -1,0 +1,50 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5em;
+	padding: 1.5em;
+	overflow: hidden;
+}
+
+.image {
+	max-width: unset;
+	width: 150%;
+}
+
+.body {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.body > div {
+	display: grid;
+	row-gap: 1em;
+}
+
+.body > div > h1 {
+	font-size: 40px;
+	font-weight: var(--font-weight-bold);
+	color: var(--color-neutral-darker);
+	line-height: 1.15;
+}
+
+.body > div > p {
+	font-size: 18px;
+	font-weight: var(--font-weight-medium);
+	color: var(--color-neutral-lighter);
+	line-height: 1.6;
+}
+
+.body > button {
+	width: 200px;
+	padding: 0.75em 2em;
+	font-size: 20px;
+	font-weight: var(--font-weight-bold);
+	border: none;
+	border-radius: 50px;
+	background-color: var(--color-primary-cyan);
+}
