@@ -1,0 +1,54 @@
+:root {
+	--color-primary-cyan: #2acfcf;
+	--color-primary-violet: #3b3054;
+
+	--color-secondary-red: #f46262;
+
+	--color-neutral-lighter: #bfbfbf;
+	--color-neutral-light: #9e9aa7;
+	--color-neutral-dark: #35323e;
+	--color-neutral-darker: #232127;
+
+	--font-size-regular: 18px;
+
+	--font-weight-medium: 500;
+	--font-weight-bold: 700;
+}
+
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+}
+
+/* dark mode user-agent-styles */
+
+html {
+	color-scheme: dark light;
+}
+
+/* min body height */
+
+body {
+	min-height: 100vh;
+}
+
+/* responsive images/videos */
+img,
+picture,
+svg,
+video {
+	display: block;
+	max-width: 100%;
+}
