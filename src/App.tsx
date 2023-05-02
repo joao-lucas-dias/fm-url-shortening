@@ -1,6 +1,7 @@
-import "./App.css";
+import Footer from "./components/Footer";
 
-function App() {
+
+const App = () => {
 	return (
 		<>
 			Features Pricing Resources Login Sign Up More than just shorter links Build your
@@ -15,8 +16,9 @@ function App() {
 			audience engagement. Boost your links today Get Started Features Link Shortening
 			Branded Links Analytics Resources Blog Developers Support Company About Our Team
 			Careers Contact
+			<Footer />
 		</>
 	);
-}
+};
 
 export default App;
