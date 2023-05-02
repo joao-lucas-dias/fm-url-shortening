@@ -2,7 +2,7 @@ import classes from "./Hero.module.css";
 
 const Hero = () => {
 	return (
-		<section className={classes.container}>
+		<section className={classes.hero}>
 			<img
 				src="/images/illustration-working.svg"
 				alt="Someone working."

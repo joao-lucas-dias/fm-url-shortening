@@ -3,27 +3,27 @@ import classes from "./Footer.module.css";
 const Footer = () => {
 	return (
 		<div className={classes.footer}>
-			<span className={classes.footer_h1}>Shortly</span>
-			<div className={classes.footer_list}>
-				<div className={classes.footer_item}>
+			<span className={classes.h1}>Shortly</span>
+			<div className={classes.list}>
+				<div className={classes.item}>
 					<p>Features</p>
-					<div className={classes.footer_item_body}>
+					<div className={classes.item_body}>
 						<p>Link Shortening</p>
 						<p>Branded Links</p>
 						<p>Analytics</p>
 					</div>
 				</div>
-				<div className={classes.footer_item}>
+				<div className={classes.item}>
 					<p>Resources</p>
-					<div className={classes.footer_item_body}>
+					<div className={classes.item_body}>
 						<p>Blog</p>
 						<p>Developers</p>
 						<p>Support</p>
 					</div>
 				</div>
-				<div className={classes.footer_item}>
+				<div className={classes.item}>
 					<p>Company</p>
-					<div className={classes.footer_item_body}>
+					<div className={classes.item_body}>
 						<p>About</p>
 						<p>Our Team</p>
 						<p>Carrers</p>
@@ -31,7 +31,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
-			<div className={classes.footer_socials}>
+			<div className={classes.socials}>
 				<span>
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
 						<path
