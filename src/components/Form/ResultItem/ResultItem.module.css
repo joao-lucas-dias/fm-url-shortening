@@ -1,0 +1,34 @@
+.result_item {
+  display: grid;
+  row-gap: 1em;
+  justify-items: start;
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  padding: 1em;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.result_item > p:first-child {
+  color: var(--color-neutral-darker);
+}
+
+.result_item > span {
+  width: calc(100% + 2em);
+  justify-self: center;
+  border-top: 1px solid #F0F1F6;
+}
+
+.result_item > p:nth-child(3) {
+  color: var(--color-primary-cyan);
+}
+
+.result_item > button {
+  width: 100%;
+  font-size: 16px;
+  font-weight: var(--font-weight-bold);
+  padding-block: .5em;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-primary-cyan);
+}

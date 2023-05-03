@@ -7,6 +7,11 @@
   background-color: #F0F1F6;
 }
 
+.wrapper {
+  display: grid;
+  row-gap: 6em;
+}
+
 .header {
   display: grid;
   row-gap: 1em;

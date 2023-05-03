@@ -1,6 +1,12 @@
-.form {
+.wrapper {
   display: grid;
-  row-gap: 1em;
+  row-gap: 1.5em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
   padding: 1.5em;
   border-radius: 10px;
   background-image: url("/images/bg-shorten-mobile.svg");
@@ -29,4 +35,9 @@
   border: none;
   border-radius: 5px;
   background-color: var(--color-primary-cyan);
+}
+
+.results_list {
+  display: grid;
+  row-gap: 1.5em;
 }
