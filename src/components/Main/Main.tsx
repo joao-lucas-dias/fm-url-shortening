@@ -1,8 +1,10 @@
+import Form from "../Form/Form";
 import classes from "./Main.module.css";
 
 const Main = () => {
 	return (
 		<main className={classes.main}>
+			<Form />
 			<header className={classes.header}>
 				<h2>Advanced Statistics</h2>
 				<p>

@@ -1,0 +1,32 @@
+.form {
+  display: grid;
+  row-gap: 1em;
+  padding: 1.5em;
+  border-radius: 10px;
+  background-image: url("/images/bg-shorten-mobile.svg");
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-color: var(--color-primary-violet);
+}
+
+.form > input {
+  font-size: 16px;
+  padding: .75em 1em;
+  border: none;
+  border-radius: 5px;
+  color: var(--color-neutral-light);
+  background-color: white;
+}
+
+.form > input::placeholder {
+  color: var(--color-neutral-light);
+}
+
+.form > button {
+  font-size: 18px;
+  font-weight: var(--font-weight-bold);
+  padding-block: .565em;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-primary-cyan);
+}
