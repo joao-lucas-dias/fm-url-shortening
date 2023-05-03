@@ -2,7 +2,7 @@ import classes from "./Footer.module.css";
 
 const Footer = () => {
 	return (
-		<div className={classes.footer}>
+		<footer className={classes.footer}>
 			<span className={classes.h1}>Shortly</span>
 			<div className={classes.list}>
 				<div className={classes.item}>
@@ -65,7 +65,7 @@ const Footer = () => {
 					</svg>
 				</span>
 			</div>
-		</div>
+		</footer>
 	);
 };
 
