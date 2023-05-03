@@ -1,0 +1,26 @@
+.secondary_cta {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  row-gap: 1em;
+  padding-block: 5.625em;
+  background-image: url("/images/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-color: var(--color-primary-violet);
+}
+
+.secondary_cta > h2 {
+  font-size: 28px;
+  font-weight: var(--font-weight-bold);
+  color: white;
+}
+
+.secondary_cta > button {
+  width: fit-content;
+	padding: 0.65em 2em;
+	font-size: 20px;
+	font-weight: var(--font-weight-bold);
+	border: none;
+	border-radius: 50px;
+	background-color: var(--color-primary-cyan);
+}
