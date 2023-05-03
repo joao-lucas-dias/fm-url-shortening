@@ -28,6 +28,10 @@
   color: var(--color-neutral-light);
 }
 
+.form > input:focus-visible {
+  outline: 1px solid var(--color-primary-cyan);
+}
+
 .form > button {
   font-size: 18px;
   font-weight: var(--font-weight-bold);
