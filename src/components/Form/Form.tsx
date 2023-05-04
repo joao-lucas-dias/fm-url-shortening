@@ -1,7 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import classes from "./Form.module.css";
-import ResultItem from "./ResultItem/ResultItem";
 import Result from "../../../models/types";
+import ResultsList from "./Results/ResultsList";
 
 const Form = () => {
 	const [error, setError] = useState(false);
@@ -52,13 +52,7 @@ const Form = () => {
 				</div>
 				<button type="submit">Shorten It!</button>
 			</form>
-			{resultsList.length > 0 && (
-				<ul className={classes.results_list}>
-					{resultsList.map((result) => (
-						<ResultItem key={result.originalUrl} data={result} />
-					))}
-				</ul>
-			)}
+			{resultsList.length > 0 && <ResultsList results={resultsList} />}
 		</div>
 	);
 };

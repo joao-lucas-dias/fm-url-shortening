@@ -1,64 +1,59 @@
 .wrapper {
-  display: grid;
-  row-gap: 1.5em;
+	display: grid;
+	row-gap: 1.5em;
 }
 
 .form {
-  display: grid;
-  row-gap: 1em;
-  padding: 1.5em;
-  border-radius: 10px;
-  background-image: url("/images/bg-shorten-mobile.svg");
-  background-position: 100% 0;
-  background-repeat: no-repeat;
-  background-color: var(--color-primary-violet);
+	display: grid;
+	row-gap: 1em;
+	padding: 1.5em;
+	border-radius: 10px;
+	background-image: url("/images/bg-shorten-mobile.svg");
+	background-position: 100% 0;
+	background-repeat: no-repeat;
+	background-color: var(--color-primary-violet);
 }
 
 .input {
-  width: 100%;
-  font-size: 16px;
-  padding: .5em 1em;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  color: var(--color-neutral-light);
-  background-color: white;
+	width: 100%;
+	font-size: 16px;
+	padding: 0.5em 1em;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	color: var(--color-neutral-light);
+	background-color: white;
 }
 
 .input::placeholder {
-  color: var(--color-neutral-light);
+	color: var(--color-neutral-light);
 }
 
 .input:focus-visible {
-  outline: 2px solid var(--color-primary-cyan);
+	outline: 2px solid var(--color-primary-cyan);
 }
 
 .input_error {
-  outline: 3px solid var(--color-secondary-red);
+	outline: 3px solid var(--color-secondary-red);
 }
 
 .input_error::placeholder {
-  color: var(--color-secondary-red);
+	color: var(--color-secondary-red);
 }
 
 .error {
-  margin-top: .5em;
-  text-align: start;
-  font-size: 12px;
-  font-weight: 500;
-  font-style: italic;
-  color: var(--color-secondary-red);
+	margin-top: 0.5em;
+	text-align: start;
+	font-size: 12px;
+	font-weight: 500;
+	font-style: italic;
+	color: var(--color-secondary-red);
 }
 
 .form > button {
-  font-size: 18px;
-  font-weight: var(--font-weight-bold);
-  padding-block: .565em;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--color-primary-cyan);
-}
-
-.results_list {
-  display: grid;
-  row-gap: 1.5em;
+	font-size: 18px;
+	font-weight: var(--font-weight-bold);
+	padding-block: 0.565em;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--color-primary-cyan);
 }

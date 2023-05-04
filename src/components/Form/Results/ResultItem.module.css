@@ -23,7 +23,7 @@
   color: var(--color-primary-cyan);
 }
 
-.result_item > button {
+.button {
   width: 100%;
   font-size: 16px;
   font-weight: var(--font-weight-bold);
@@ -31,4 +31,8 @@
   border: none;
   border-radius: 5px;
   background-color: var(--color-primary-cyan);
+}
+
+.button_copied {
+  background-color: var(--color-primary-violet);
 }
