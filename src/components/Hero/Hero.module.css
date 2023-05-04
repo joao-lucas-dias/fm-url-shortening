@@ -1,14 +1,15 @@
 .hero {
 	display: flex;
 	flex-direction: column;
-	gap: 2.5em;
-	padding: 1.5em 1.5em 10.5em 1.5em;
+	gap: 2.625em;
+	padding: 0em 1.5em 10em 1.5em;
 	overflow: hidden;
 }
 
 .image {
 	max-width: unset;
 	width: 150%;
+	height: 335px;
 }
 
 .body {
