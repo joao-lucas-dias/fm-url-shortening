@@ -71,3 +71,18 @@
 		font-size: 2.5rem;
 	}
 }
+
+@media (min-width: 1024px) {
+	.hero {
+		padding: 1.5em 5em 10em 5em;
+	}
+
+	.hero_cta > div > h1 {
+		font-size: 56px;
+	}
+
+	.hero_image > img {
+		height: 100%;
+		margin-right: -100px;
+	}
+}

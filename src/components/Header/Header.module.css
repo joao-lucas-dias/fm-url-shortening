@@ -70,3 +70,44 @@
     padding: .5em 3.5em;
   }
 }
+
+@media (min-width: 1024px) {
+  .header {
+    gap: 2.5em;
+    padding: 2.5em 5em;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav_menu {
+    position: unset;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background: none;
+  }
+
+  .nav_menu > ul {
+    flex-direction: row;
+    gap: 2.5em;
+    font-size: 16px;
+    color: var(--color-neutral-light);
+  }
+
+  .nav_menu > span {
+    display: none;
+  }
+
+  .nav_menu > ul:last-child {
+    align-items: center;
+    gap: 2em;
+  }
+
+  .button {
+    padding: 0.5em 2.5em;
+  }
+}
