@@ -4,11 +4,17 @@ import ResultItem from "./ResultItem/ResultItem";
 import Result from "../../../models/types";
 
 const Form = () => {
+	const [error, setError] = useState(false);
 	const [enteredUrl, setEnteredUrl] = useState("");
 	const [resultsList, setResultsList] = useState<Result[]>([]);
 
 	const formSubmitHandler = async (event: FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
+
+		if (enteredUrl.length === 0) {
+			setError(true);
+			return;
+		}
 
 		const response = await fetch(`https://api.shrtco.de/v2/shorten?url=${enteredUrl}`);
 
@@ -25,18 +31,25 @@ const Form = () => {
 	};
 
 	const inputChangeHandler = (event: ChangeEvent<HTMLInputElement>) => {
+		setError(false);
 		setEnteredUrl(event.target.value);
 	};
+
+	const inputClasses = error ? `${classes.input} ${classes.input_error}` : classes.input;
 
 	return (
 		<div className={classes.wrapper}>
 			<form onSubmit={formSubmitHandler} className={classes.form}>
-				<input
-					type="text"
-					value={enteredUrl}
-					onChange={inputChangeHandler}
-					placeholder="Shorten a link here..."
-				/>
+				<div>
+					<input
+						type="text"
+						value={enteredUrl}
+						onChange={inputChangeHandler}
+						placeholder="Shorten a link here..."
+						className={inputClasses}
+					/>
+					{error && <p className={classes.error}>Please add a link</p>}
+				</div>
 				<button type="submit">Shorten It!</button>
 			</form>
 			{resultsList.length > 0 && (
