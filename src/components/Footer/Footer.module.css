@@ -1,16 +1,16 @@
 .footer {
   padding-block: 2.5em;
-  display: grid;
-  row-gap: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
   justify-content: center;
+  align-items: center;
   text-align: center;
   background-color: var(--color-neutral-darker);
 }
 
-.h1 {
-  font-size: 2rem;
-  font-weight: var(--font-weight-bold);
-  color: #fff;
+.logo > svg path {
+  fill: #fff;
 }
 
 .list {
@@ -39,4 +39,25 @@
   display: flex;
   gap: 1.5em;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2.5em 3.5em;
+  }
+
+  .list {
+    flex-direction: row;
+  }
+
+  .item {
+    text-align: left;
+  }
+
+  .socials {
+    flex-direction: column;
+  }
 }

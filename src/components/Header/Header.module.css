@@ -54,3 +54,19 @@
   border-radius: 50px;
   background-color: var(--color-primary-cyan);
 }
+
+@media (min-width: 768px) {
+  .header {
+    padding: 2em 3.5em;
+  }
+
+  .nav_menu {
+    width: calc(100% - 7em);
+    padding: 2.5em 3.5em;
+  }
+
+  .button {
+    width: fit-content;
+    padding: .5em 3.5em;
+  }
+}

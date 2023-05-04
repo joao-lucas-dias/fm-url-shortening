@@ -4,12 +4,13 @@ import classes from "./Hero.module.css";
 const Hero = () => {
 	return (
 		<section className={classes.hero}>
-			<img
-				src="/images/illustration-working.svg"
-				alt="Someone working."
-				className={classes.image}
-			/>
-			<div className={classes.body}>
+			<div className={classes.hero_image}>
+				<img
+					src="/images/illustration-working.svg"
+					alt="Someone working."
+				/>
+			</div>
+			<div className={classes.hero_cta}>
 				<div>
 					<h1>More than just shorter links</h1>
 					<p>

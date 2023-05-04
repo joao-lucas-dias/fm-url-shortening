@@ -83,3 +83,13 @@
 	line-height: 1.7;
 	color: var(--color-neutral-light);
 }
+
+@media (min-width: 768px) {
+	.main {
+		padding-inline: 3.5em;
+	}
+
+	.wrapper {
+		padding-inline: 5.5em;
+	}
+}
