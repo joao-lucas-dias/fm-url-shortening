@@ -39,13 +39,3 @@
 	color: var(--color-neutral-lighter);
 	line-height: 1.6;
 }
-
-.body > button {
-	width: 200px;
-	padding: 0.75em 2em;
-	font-size: 20px;
-	font-weight: var(--font-weight-bold);
-	border: none;
-	border-radius: 50px;
-	background-color: var(--color-primary-cyan);
-}

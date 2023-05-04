@@ -1,3 +1,4 @@
+import CtaButton from "../UI/CtaButton";
 import classes from "./Hero.module.css";
 
 const Hero = () => {
@@ -16,7 +17,7 @@ const Hero = () => {
 						performing.
 					</p>
 				</div>
-				<button>Get Started</button>
+				<CtaButton />
 			</div>
 		</section>
 	);
