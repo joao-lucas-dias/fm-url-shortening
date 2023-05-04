@@ -1,4 +1,4 @@
-import { ChangeEvent, FormEvent, useState } from "react";
+import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import classes from "./Form.module.css";
 import Result from "../../../models/types";
 import ResultsList from "./Results/ResultsList";
@@ -6,7 +6,16 @@ import ResultsList from "./Results/ResultsList";
 const Form = () => {
 	const [error, setError] = useState(false);
 	const [enteredUrl, setEnteredUrl] = useState("");
-	const [resultsList, setResultsList] = useState<Result[]>([]);
+	const [resultsList, setResultsList] = useState<Result[]>(() => {
+		const results = localStorage.getItem("results");
+		const initialValue = results ? JSON.parse(results) : [];
+
+		return initialValue;
+	});
+
+	useEffect(() => {
+		localStorage.setItem("results", JSON.stringify(resultsList));
+	}, [resultsList]);
 
 	const formSubmitHandler = async (event: FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
