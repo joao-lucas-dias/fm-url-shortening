@@ -1,5 +1,5 @@
 import CtaButton from "../UI/CtaButton";
-import classes from "./CTA.module.css";
+import classes from "./Cta.module.css";
 
 const Cta = () => {
 	return (
