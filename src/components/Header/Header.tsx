@@ -17,7 +17,6 @@ const Header = () => {
 
 	const toggleHandler = () => {
 		const classList = navigation?.classList;
-		console.log(classList?.value);
 
 		if (classList?.contains(classes.show)) {
 			classList.remove(classes.show);
