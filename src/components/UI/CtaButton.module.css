@@ -14,6 +14,13 @@
 	}
 }
 
+@media (min-width: 1024px) {
+	.cta_button:hover {
+		cursor: pointer;
+		background-color: var(--color-primary-cyan-light);
+	}
+}
+
 @media (min-width: 1440px) {
 	.cta_button {
 		padding: .65em 2em;

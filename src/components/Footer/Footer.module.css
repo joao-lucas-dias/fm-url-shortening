@@ -1,79 +1,89 @@
 .footer {
-  padding-block: 2.5em;
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: var(--color-neutral-darker);
+	padding-block: 2.5em;
+	display: flex;
+	flex-direction: column;
+	gap: 3em;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: var(--color-neutral-darker);
 }
 
 .logo > svg path {
-  fill: #fff;
+	fill: #fff;
 }
 
 .list {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5em;
+	display: flex;
+	flex-direction: column;
+	gap: 2.5em;
 }
 
 .item {
-  font-size: 15px;
-  font-weight: var(--font-weight-bold);;
+	font-size: 15px;
+	font-weight: var(--font-weight-bold);
 }
 
 .item_body {
-  display: grid;
-  row-gap: .5em;
-  margin-top: 1.5em;
+	display: grid;
+	row-gap: 0.5em;
+	margin-top: 1.5em;
 }
 
 .item_body > * {
-  font-weight: var(--font-weight-medium);
-  color: var(--color-neutral-lighter);
+	font-weight: var(--font-weight-medium);
+	color: var(--color-neutral-lighter);
 }
 
 .socials {
-  display: flex;
-  gap: 1.5em;
-  align-items: center;
+	display: flex;
+	gap: 1.5em;
+	align-items: center;
 }
 
 @media (min-width: 768px) {
-  .footer {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 2.5em 3.5em;
-  }
+	.footer {
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding: 2.5em 3.5em;
+	}
 
-  .list {
-    flex-direction: row;
-  }
+	.list {
+		flex-direction: row;
+	}
 
-  .item {
-    text-align: left;
-  }
+	.item {
+		text-align: left;
+	}
 
-  .socials {
-    flex-direction: column;
-  }
+	.socials {
+		flex-direction: column;
+	}
 }
 
 @media (min-width: 1024px) {
-  .socials {
-    flex-direction: row;
-  }
+	.socials {
+		flex-direction: row;
+	}
+
+	.item_body > *:hover {
+		cursor: pointer;
+		color: var(--color-primary-cyan);
+	}
+
+	.socials > *:hover path {
+		cursor: pointer;
+		fill: var(--color-primary-cyan);
+	}
 }
 
 @media (min-width: 1440px) {
-  .footer {
-    padding: 4em 10em;
-  }
+	.footer {
+		padding: 4em 10em;
+	}
 
-  .item {
-    font-size: 16px;
-  }
+	.item {
+		font-size: 16px;
+	}
 }

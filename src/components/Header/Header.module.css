@@ -125,8 +125,18 @@
     gap: 2em;
   }
 
+  .nav_menu > ul li:hover {
+    cursor: pointer;
+    color: var(--color-neutral-darker);
+  }
+
   .button {
     padding: 0.5em 2.5em;
+  }
+
+  .button:hover {
+    cursor: pointer;
+    background-color: var(--color-primary-cyan-light);
   }
 }
 

@@ -9,8 +9,14 @@
   background-color: white;
 }
 
-.result_item > p:first-child {
+.result_item > p {
   color: var(--color-neutral-darker);
+}
+
+.result_item > div {
+  width: 100%;
+  display: grid;
+  row-gap: .75em;
 }
 
 .result_item > span {
@@ -19,7 +25,8 @@
   border-top: 1px solid #F0F1F6;
 }
 
-.result_item > p:nth-child(3) {
+.result_item > div > p {
+  justify-self: flex-start;
   color: var(--color-primary-cyan);
 }
 
@@ -35,4 +42,44 @@
 
 .button_copied {
   background-color: var(--color-primary-violet);
+}
+
+@media (min-width: 1024px) {
+  .result_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+  }
+
+  .result_item > span {
+    display: none;
+  }
+
+  .result_item > div {
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+  }
+
+  .button {
+    width: 10ch;
+  }
+
+  .button:hover {
+    cursor: pointer;
+    background-color: var(--color-primary-cyan-light);
+  }
+
+  .button_copied:hover {
+    cursor: default;
+    background-color: var(--color-primary-violet);
+  }
+}
+
+@media (min-width: 1440px) {
+  .link {
+    font-size: 20px;
+  }
 }

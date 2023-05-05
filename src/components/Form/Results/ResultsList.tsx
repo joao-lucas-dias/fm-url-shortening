@@ -2,6 +2,8 @@ import { useState } from "react";
 import Result from "../../../../models/types";
 import ResultItem from "./ResultItem";
 
+import classes from "./ResultsList.module.css";
+
 const ResultsList: React.FC<{ results: Result[] }> = (props) => {
 	const [copied, setCopied] = useState(-1);
 
@@ -12,7 +14,7 @@ const ResultsList: React.FC<{ results: Result[] }> = (props) => {
 	};
 
 	return (
-		<ul style={{display: "grid", rowGap: "1.5em"}}>
+		<ul className={classes.results_list}>
 			{props.results.map((result, idx) => (
 				<ResultItem
 					key={result.originalUrl}

@@ -15,15 +15,17 @@ const ResultItem: React.FC<{
 
 	return (
 		<li className={classes.result_item}>
-			<p>{props.data.originalUrl}</p>
+			<p className={classes.link}>{props.data.originalUrl}</p>
 			<span></span>
-			<p>{props.data.shortUrl}</p>
-			<button
-				onClick={() => props.onCopyLink(props.data.shortUrl, props.index)}
-				className={buttonClasses}
-			>
-				{props.copied === props.index ? "Copied!" : "Copy"}
-			</button>
+			<div>
+				<p className={classes.link}>{props.data.shortUrl}</p>
+				<button
+					onClick={() => props.onCopyLink(props.data.shortUrl, props.index)}
+					className={buttonClasses}
+				>
+					{props.copied === props.index ? "Copied!" : "Copy"}
+				</button>
+			</div>
 		</li>
 	);
 };

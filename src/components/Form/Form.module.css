@@ -14,6 +14,10 @@
 	background-color: var(--color-primary-violet);
 }
 
+.form > div {
+	position: relative;
+}
+
 .input {
 	width: 100%;
 	font-size: 16px;
@@ -41,6 +45,7 @@
 }
 
 .error {
+	position: absolute;
 	margin-top: 0.5em;
 	text-align: start;
 	font-size: 12px;
@@ -74,6 +79,16 @@
 
 	.form > button {
 		padding: 0.5em 2em;
+	}
+
+	.form > button:hover {
+		cursor: pointer;
+		background-color: var(--color-primary-cyan-light);
+	}
+
+	.error {
+		font-size: 16px;
+		margin-top: .5em;
 	}
 }
 
