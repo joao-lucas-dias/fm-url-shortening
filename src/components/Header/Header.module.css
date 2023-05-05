@@ -77,6 +77,7 @@
   .nav_menu {
     width: calc(100% - 7em);
     padding: 2.5em 3.5em;
+    z-index: 100;
   }
 
   .button {

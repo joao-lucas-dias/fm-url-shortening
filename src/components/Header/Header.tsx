@@ -8,7 +8,7 @@ const Header = () => {
 	const closeNavigationOnResize = () => {
 		const screenWidth = window.innerWidth;
 
-		if (screenWidth > 767 && navigation?.classList.contains(classes.show)) {
+		if (screenWidth > 1023 && navigation?.classList.contains(classes.show)) {
 			navigation.classList.remove(classes.show);
 		}
 	};
