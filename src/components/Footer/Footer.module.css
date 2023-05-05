@@ -67,3 +67,13 @@
     flex-direction: row;
   }
 }
+
+@media (min-width: 1440px) {
+  .footer {
+    padding: 4em 10em;
+  }
+
+  .item {
+    font-size: 16px;
+  }
+}

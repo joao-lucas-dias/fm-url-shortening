@@ -42,7 +42,7 @@
 
 @media (min-width: 768px) {
 	.hero {
-		flex-direction: row-reverse;
+		flex-direction: row;
 		gap: 3em;
 		align-items: center;
 		padding: 1.5em 3.5em 7em 3.5em;
@@ -84,5 +84,36 @@
 	.hero_image > img {
 		height: 100%;
 		margin-right: -100px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.hero {
+		padding: 1.5em 0em 9.5em 10em;
+		gap: 3.8em;
+	}
+
+	.hero_cta {
+		gap: 2.3em;
+	}
+
+	.hero_cta > div {
+		row-gap: 0em;
+	}
+
+	.hero_cta > div > h1 {
+		font-size: 80px;
+		letter-spacing: -2.25px;
+	}
+
+	.hero_cta > div > p {
+		font-size: 22px;
+		line-height: 1.6;
+	}
+
+	.hero_image > img {
+		width: initial;
+		height: 100%;
+		margin-right: -123px;
 	}
 }

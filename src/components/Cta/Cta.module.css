@@ -21,3 +21,13 @@
 		background-size: cover;
 	}
 }
+
+@media (min-width: 1440px) {
+	.secondary_cta {
+		padding-block: 3.7em;
+	}
+
+	.secondary_cta > h2 {
+		font-size: 40px;
+	}
+}

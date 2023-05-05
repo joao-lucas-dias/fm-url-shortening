@@ -13,3 +13,9 @@
 		padding: .5em 2em;
 	}
 }
+
+@media (min-width: 1440px) {
+	.cta_button {
+		padding: .65em 2em;
+	}
+}

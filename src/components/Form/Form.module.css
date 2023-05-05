@@ -76,3 +76,20 @@
 		padding: 0.5em 2em;
 	}
 }
+
+@media (min-width: 1440px) {
+	.form {
+		padding: 3.25em;
+	}
+
+	.input {
+		font-size: 20px;
+		border-radius: 10px;
+		padding: .75em 1.6em;
+	}
+
+	.form > button {
+		font-size: 20px;
+		padding: 0em 2em;
+	}
+}
