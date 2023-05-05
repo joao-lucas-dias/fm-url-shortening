@@ -45,6 +45,7 @@
 .line {
 	width: 10px;
 	height: 5.75em;
+	align-self: center;
 	background-color: var(--color-primary-cyan);
 }
 
@@ -145,7 +146,6 @@
 	.line {
 		width: 1.875em;
 		height: 8px;
-		align-self: center;
 		margin-bottom: 44px;
 	}
 

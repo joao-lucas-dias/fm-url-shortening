@@ -9,7 +9,7 @@
 .hero_image > img {
 	max-width: unset;
 	width: 150%;
-	height: 335px;
+	height: 100%;
 }
 
 .hero_cta {
@@ -82,7 +82,6 @@
 	}
 
 	.hero_image > img {
-		height: 100%;
 		margin-right: -100px;
 	}
 }
@@ -113,7 +112,6 @@
 
 	.hero_image > img {
 		width: initial;
-		height: 100%;
 		margin-right: -123px;
 	}
 }
